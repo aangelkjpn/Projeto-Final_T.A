@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #000000;
+    font-size: 25px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff8c00;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.conteudo {
+    margin: 30px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #ff8c00;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.conteudo h2 {
+    background-color: #ff8c00;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.conteudo h3 {
+    font-size: 28px;
+}
+
+.conteudo p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.conteudo ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.conteudo blockquote {
+    font-style: italic;
+    border-left: 4px solid #ff8c00;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.conteudo a {
+    color: #ff8800;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.conteudo a:hover {
+    text-decoration: underline;
+}
+
+.acoes_af{
+    color: darkorange;
+}
+
+/* =============== Imagem =============== */
+
+.conteudo-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.imagem-foucault {
+    max-width: 25%;
+    height: auto;
+    border-radius: 10px;
+    border: 1.8px solid;
+    box-shadow: 0 12px 24px rgb(0, 0, 0);
+}
+
+.imagem-filosofos {
+    max-width: 40%;
+    /* Define largura da imagem burrao */
+    height: auto;
+    border-radius: 10px;
+    border: 1.8px solid;
+    box-shadow: 0 12px 24px rgb(0, 0, 0);
+}
+
+.imagem-Bourdieu {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    border: 1.8px solid;
+    box-shadow: 0 12px 24px rgb(0, 0, 0);
+}
+
+.texto {
+    flex: 1;
+    /* ocupa o espaço restante */
+    font-size: 25px;
+}
+
+.conteudo-abaixo {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.conteudo-abaixo-pf {
+    margin-top: 20px;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+.conteudo-abaixo-PB {
+    margin-top: 20px;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+.conteudo-abaixo-f {
+    margin-top: 20px;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+.video-HA {
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+}
+
+.video-HA strong {
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .conteudo-flex {
+        flex-direction: column;
+        /* Imagem e texto empilham-se em telas menores */
+    }
+
+    .imagem-filosofos {
+        max-width: 100%;
+        /* Imagem ocupa toda a largura */
+    }
+}
+
+/* =========================================================== */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 22px;
+    }
+
+    .conteudo {
+        padding: 20px;
+    }
+
+    .conteudo h2 {
+        font-size: 26px;
+    }
+
+    .conteudo h3 {
+        font-size: 24px;
+    }
+
+    .conteudo p {
+        font-size: 20px;
+    }
+}
